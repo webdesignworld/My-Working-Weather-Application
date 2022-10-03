@@ -1,3 +1,6 @@
+body {
+}
+
 img {
   height: 20px;
 }
@@ -6,19 +9,32 @@ p {
   margin-bottom: 0;
 }
 
-.card {
+/* .card {
   border-color: #4d4e4e;
   border-width: 3px;
   width: 600px;
   height: 360px;
   margin-top: 50px;
+} */
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  background-color: #f2e6d8;
 }
 
 .button {
-  background-color: #8ec9f9;
+  /* background-color: #8ec9f9; */
+  background-color: #f285e0;
   border-radius: 25px;
   border-style: none;
-  padding: 10px 20px;
+  padding: 15px 25px;
 }
 
 .field {

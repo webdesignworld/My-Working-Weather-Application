@@ -16,132 +16,123 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/style.css" />
-    
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <title>Weather Forecast - Berlin</title>
   </head>
 
   <body>
-
-   
-
     <div class="container-fluid" id="background-color">
-      <div class="card">
-        <div class="card-body">
-
-         
-          <p>
-            Asia - Africa - Europe - North America - South America - Australia
-          </p>
-          <form id="search-form">
-            <input
-              type="text"
-              name="city"
-              id="city-input"
-              required
-              placeholder="Enter your city"
-              autofocus
-              class="field"
-              autocomplete="off"
-            />
-            <input type="submit" value="Search" class="button" />
-  <!-- <button id="current-location">Current location</button> -->
-
-          </form>
+      <div class="weather-app-wrapper">
+        <div class="weather-app"> 
         
+      <!-- <div class="card">
+        <div class="card-body"> -->
 
-          <h1 id="new-city"></h1> 
-          <br>
-          <div class="container-fluid">
-            <div class="row row-cols-auto">
-              <div class="col-6">
-                <p id="date"></p>
-              </div>
-              <div class="col-6">
-                <!-- <p id="precipitation">Precipitation: <b>1%</b></p> -->
-              </div>
+      <p>Asia - Africa - Europe - North America - South America - Australia</p>
+      <form id="search-form">
+        <input
+          type="text"
+          name="city"
+          id="city-input"
+          required
+          placeholder="Enter your city"
+          autofocus
+          class="field"
+          autocomplete="off"
+        />
+        <input type="submit" value="Search" class="button" />
+        <!-- <button id="current-location">Current location</button> -->
+      </form>
 
-              <div class="col-6">
-             <p>Last updated @ <span id="time"></span></p>
-              </div>
-              <div class="col-6">
-                <p>Humidity: <span id="humidity"></span>%</p>
-              </div>
-
-              <div class="col-6 col-sm">
-                
-                
-                <h1><span id="real-weather"></span>°C</h1>
-                
-              </div>
-            <div class="weather-temperature">  <img src="" id="icon" alt="">  </div>
-              <div class="col-6 col-sm">
-                <h2><span id="real-weather-fahrenheit"></span>°F</h2>
-              </div>
-
-              <div class="col-6">
-                <p>Wind: <span id="wind"></span>km/h</p>
-              </div>
-            </div>
+      <h1 id="new-city"></h1>
+      <br />
+      <div class="container-fluid">
+        <div class="row row-cols-auto">
+          <div class="col-6">
+            <p id="date"></p>
+          </div>
+          <div class="col-6">
+            <!-- <p id="precipitation">Precipitation: <b>1%</b></p> -->
           </div>
 
-          <div class="horizontal-list">
-            <div class="cell">
-              <div class="inner day">Thur</div>
-              <div class="inner image">
-                <img src="/img/rain.png" title="Cloud" alt="Rain image" />
-              </div>
-              <div class="inner temp">25°C</div>
-            </div>
-            <div class="cell">
-              <div class="inner day">Fri</div>
-              <div class="inner image">
-                <img src="/img/cloud.png" title="Cloud" alt="Cloud picture" />
-              </div>
-              <div class="inner temp">22°C</div>
-            </div>
-            <div class="cell">
-              <div class="inner day">Sat</div>
-              <div class="inner image">
-                <img src="/img/sun.png" title="Cloud" alt="Sun picture" />
-              </div>
-              <div class="inner temp">30°C</div>
-            </div>
+          <div class="col-6">
+            <p>Last updated @ <span id="time"></span></p>
+          </div>
+          <div class="col-6">
+            <p>Humidity: <span id="humidity"></span>%</p>
+          </div>
 
-            <div class="cell">
-              <div class="inner day">Sun</div>
-              <div class="inner image">
-                <img src="/img/sun.png" title="Cloud" alt="Sun picture" />
-              </div>
-              <div class="inner temp">31°C</div>
-            </div>
-            <div class="cell">
-              <div class="inner day">Mon</div>
-              <div class="inner image">
-                <img src="/img/cloud.png" title="Cloud" alt="Cloud picture" />
-              </div>
-              <div class="inner temp">28°C</div>
-            </div>
-            
-         
-          
+          <div class="col-6 col-sm">
+            <h1><span id="real-weather"></span>°C</h1>
+          </div>
+          <div class="weather-temperature"><img src="" id="icon" alt="" /></div>
+          <div class="col-6 col-sm">
+            <h2><span id="real-weather-fahrenheit"></span>°F</h2>
+          </div>
+
+          <div class="col-6">
+            <p>Wind: <span id="wind"></span>km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontal-list">
+        <div class="cell">
+          <div class="inner day">Thur</div>
+          <div class="inner image">
+            <img src="/img/rain.png" title="Cloud" alt="Rain image" />
+          </div>
+          <div class="inner temp">25°C</div>
+        </div>
+        <div class="cell">
+          <div class="inner day">Fri</div>
+          <div class="inner image">
+            <img src="/img/cloud.png" title="Cloud" alt="Cloud picture" />
+          </div>
+          <div class="inner temp">22°C</div>
+        </div>
+        <div class="cell">
+          <div class="inner day">Sat</div>
+          <div class="inner image">
+            <img src="/img/sun.png" title="Cloud" alt="Sun picture" />
+          </div>
+          <div class="inner temp">30°C</div>
+        </div>
+
+        <div class="cell">
+          <div class="inner day">Sun</div>
+          <div class="inner image">
+            <img src="/img/sun.png" title="Cloud" alt="Sun picture" />
+          </div>
+          <div class="inner temp">31°C</div>
+        </div>
+        <div class="cell">
+          <div class="inner day">Mon</div>
+          <div class="inner image">
+            <img src="/img/cloud.png" title="Cloud" alt="Cloud picture" />
+          </div>
+          <div class="inner temp">28°C</div>
+        </div>
       </div>
     </div>
-<div>
-                 <a href="https://github.com/matthieua/sup" target="_blank">Open-source code</a> by Matt Delac
-            </div>
+    <div>
+      <a href="https://github.com/matthieua/sup" target="_blank"
+        >Open-source code</a
+      >
+      by Svetlana Delaney @ <a href="https://webdesignworld.co.uk" target="_blank"> Web Design World</a>
+    </div>
 
     <!-- Optional JavaScript -->
 
     <!-- <script src="/javascript.js"
     ></script> -->
-    <script src="/searchform.js"
-    ></script>
+    <script src="/searchform.js"></script>
     <!-- <script src="/current.js"
     ></script> -->
     <script src="/fahrenheit.js"></script>
-<!-- <script src="/matt.js"></script> -->
+    <!-- <script src="/matt.js"></script> -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
