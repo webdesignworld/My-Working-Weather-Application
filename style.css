@@ -1,4 +1,9 @@
 body {
+  
+    background-image: url('/img/dharmendra-sahu-Ia2Kjtrx8y4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;  
 }
 
 img {
@@ -9,29 +14,30 @@ p {
   margin-bottom: 0;
 }
 
-/* .card {
-  border-color: #4d4e4e;
-  border-width: 3px;
-  width: 600px;
-  height: 360px;
-  margin-top: 50px;
-} */
+a{
+  color: white;
+}
+
+
 
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  margin-top: 75px;
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* background-color: #F9EB68 */
   background-color: #f2e6d8;
+  
 }
 
 .button {
-  /* background-color: #8ec9f9; */
-  background-color: #f285e0;
+  background-color: #8ec9f9;
   border-radius: 25px;
   border-style: none;
   padding: 15px 25px;
@@ -99,3 +105,5 @@ p {
   height: 64px;
   width: 64px;
 }
+
+
